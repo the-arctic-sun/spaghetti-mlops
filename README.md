@@ -27,7 +27,7 @@ The dataset was downloaded using the **Roboflow API**.
 - No proprietary or company dataset is used  
 - Fully independent and reproducible setup  
 
-### Download Script
+### Download Script provided by Roboflow
 
 ```python
 !pip install roboflow
@@ -42,7 +42,7 @@ dataset = version.download("yolo26")
 
 ---
 
-## 📂 Dataset Structure (Verified)
+## 📂 Dataset Structure  
 
 ```
 data/
