@@ -45,7 +45,7 @@ dataset = version.download("yolo26")
 ## 📂 Dataset Structure (Verified)
 
 ```
-spaghetti-segmentation-31/
+spaghetti-segmentation-dataset/
 ├── train/
 │   ├── images/
 │   └── labels/
@@ -55,6 +55,7 @@ spaghetti-segmentation-31/
 ├── test/
 │   ├── images/
 │   └── labels/
+├── data.yaml
 ```
 
 This structure is fully compatible with YOLO segmentation training.
