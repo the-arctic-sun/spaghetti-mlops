@@ -132,17 +132,25 @@ batch=16
 
 ## 📁 Training Output
 
+After training completes, all results will be saved in:
+
 ```
 runs/segment/train/
 ```
 
 👉 This folder contains:
 - Training logs  
+- Evaluation metrics and plots  
+- Model checkpoints 
 - Loss curves  
-- Evaluation metrics  
-- Model checkpoints  
 
-Best model:
+Final trained weights will be saved in:
+
+```
+runs/segment/train/weights/
+```
+
+👉 The best model:
 
 ```
 runs/segment/train/weights/best.pt
