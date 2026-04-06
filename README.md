@@ -23,9 +23,12 @@ This project focuses on:
 
 The dataset was downloaded using the **Roboflow API**.
 
+- Download the dataset you want to train  
 - Dataset exported in the required format for training  
 - No proprietary or company dataset is used  
 - Fully independent and reproducible setup  
+
+For this project, I downloaded a **spaghetti segmentation dataset** that was already provided in **YOLO26 format**, making it directly compatible with training.
 
 ### Download Script provided by Roboflow
 
