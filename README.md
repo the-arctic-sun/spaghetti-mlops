@@ -114,10 +114,10 @@ pip install ultralytics
 ```bash
 yolo task=segment mode=train \
 model=yolo26n-seg.pt \
-data=data.yaml \
+data=./data/spaghetti-segmentation-dataset/data.yaml \
 epochs=100 \
 imgsz=640 \
-batch=8
+batch=16
 ```
 
 👉 This command:
