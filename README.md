@@ -174,9 +174,10 @@ During training, you will observe:
 ## 🧪 Prediction
 
 ```bash
-yolo task=segment mode=predict \
-model=runs/segment/train/weights/best.pt \
-source=test/images
+python src/inference/torch_infer.py \
+--model runs/segment/train/weights/best.pt \
+--source data/spaghetti-segmentation-dataset/test/images \
+--save
 ```
 
 👉 This step:
