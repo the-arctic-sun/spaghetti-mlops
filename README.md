@@ -112,12 +112,11 @@ pip install ultralytics
 ### Step 3: Train the Model
 
 ```bash
-yolo task=segment mode=train \
-model=yolo26n-seg.pt \
-data=./data/spaghetti-segmentation-dataset/data.yaml \
-epochs=100 \
-imgsz=640 \
-batch=16
+python src/train/train.py \
+--data ./data/spaghetti-segmentation-dataset/data.yaml \
+--epochs 100 \
+--imgsz 640 \
+--batch 8
 ```
 
 👉 This command:
