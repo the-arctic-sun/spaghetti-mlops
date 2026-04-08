@@ -112,7 +112,7 @@ pip install ultralytics
 ### Step 3: Train the Model
 
 ```bash
-python src/train/train.py \
+python3 src/train/train.py \
 --data ./data/spaghetti-segmentation-dataset/data.yaml \
 --epochs 100 \
 --imgsz 640 \
@@ -174,8 +174,8 @@ During training, you will observe:
 ## 🧪 Prediction
 
 ```bash
-python src/inference/torch_infer.py \
---model runs/segment/train/weights/best.pt \
+python3 src/inference/torch_infer.py \
+--model models/best.pt \
 --source data/spaghetti-segmentation-dataset/test/images \
 --save
 ```
