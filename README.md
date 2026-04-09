@@ -2,7 +2,8 @@
 
 This repository presents a **clean, independent implementation** of a spaghetti defect segmentation system using modern computer vision and MLOps practices.
 
-![images](https://github.com/user-attachments/assets/8b792005-4fb2-41d3-8117-0ab422e7ef0a)
+![images](https://github.com/user-attachments/assets/c6fe0375-36d3-4d68-a65d-fa3f2522a27f)
+
 
 
 ⚠️ **Important Note**  
