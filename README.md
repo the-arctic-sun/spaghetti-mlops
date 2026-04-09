@@ -206,6 +206,57 @@ runs/segment/predict/
 
 ---
 
+## ⚡ Model Export (ONNX & TensorRT)
+
+After training, the model can be exported for optimized inference and deployment.
+
+---
+
+### 🚀 Step 1: Export to ONNX
+
+```bash
+python3 src/export/export_onnx.py \
+--model models/best.pt \
+--output models/best.onnx
+```
+
+👉 This step:
+- Converts the trained PyTorch model (`.pt`) into ONNX format  
+- Enables cross-platform deployment  
+- Prepares the model for further optimization  
+
+Output:
+
+```
+models/best.onnx
+```
+
+---
+
+### 🚀 Step 2: Convert ONNX to TensorRT
+
+```bash
+python3 src/export/export_tensorrt.py \
+--onnx models/best.onnx \
+--engine models/best.trt \
+--fp16
+```
+
+👉 This step:
+- Converts ONNX model to TensorRT engine  
+- Uses FP16 precision for faster inference  
+- Optimized for NVIDIA GPUs  
+
+Output:
+
+```
+models/best.trt
+```
+
+---
+
+
+
 ## 🧠 Model
 
 - YOLO-based segmentation model  
