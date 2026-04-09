@@ -2,6 +2,9 @@
 
 This repository presents a **clean, independent implementation** of a spaghetti defect segmentation system using modern computer vision and MLOps practices.
 
+![images](https://github.com/user-attachments/assets/8b792005-4fb2-41d3-8117-0ab422e7ef0a)
+
+
 ⚠️ **Important Note**  
 This project is built from scratch.  
 The original model and dataset from the company where I previously worked are **not used at all**.
@@ -168,6 +171,9 @@ During training, you will observe:
 - Performance stabilizing  
 
 👉 These indicators show the model is learning properly.
+<img width="4000" height="1200" alt="results" src="https://github.com/user-attachments/assets/195e84fd-a819-4ee6-970e-4e256076c33d" />
+
+
 
 ---
 
