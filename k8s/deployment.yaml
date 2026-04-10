@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: spaghetti-mlops
-        image: spaghetti-mlops:latest
-        imagePullPolicy: IfNotPresent
+        image: yourdockerhubusername/spaghetti-mlops:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8000
