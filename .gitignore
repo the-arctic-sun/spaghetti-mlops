@@ -1,0 +1,10 @@
+# Model files
+models/best.onnx
+models/best.pt
+*.pt
+*.onnx
+*.trt
+*.pyc
+
+# Windows metadata
+*:Zone.Identifier
