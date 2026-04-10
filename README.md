@@ -1,4 +1,4 @@
-# 🍝 Spaghetti MLOps 
+# 🍝 Spaghetti Failure Detection - MLOps 
 
 This repository presents a **clean, independent implementation** of a spaghetti defect segmentation system using modern computer vision and MLOps practices.
 
