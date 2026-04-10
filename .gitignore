@@ -1,10 +1,37 @@
 # Model files
 models/best.onnx
 models/best.pt
-*.pt
-*.onnx
-*.trt
-*.pyc
+models/best.trt
+**/*.pt
+**/*.onnx
+**/*.trt
+
 
 # Windows metadata
-*:Zone.Identifier
+**/*:Zone.Identifier
+
+
+# Ignore Python cache files
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/*.egg-info/
+**/*.egg
+**/*.eggs/
+**/dist/
+**/develop-eggs/
+**/build/
+**/.env/
+**/.venv/
+**/venv/
+**/ENV/
+**/env/
+**/lib/
+**/lib64/
+**/parts/
+**/sdist/
+**/pip-wheel-metadata/
+
+# Ignore VSCode settings
+.vscode/
