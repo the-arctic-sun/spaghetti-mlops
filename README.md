@@ -261,11 +261,90 @@ models/best.trt
 
 
 
-## 🧠 Model
+## 🚀 Running the Project (Docker & Kubernetes)
 
-- YOLO-based segmentation model  
-- Suitable for real-time applications  
-- Lightweight and scalable  
+This project can be deployed using Docker for local testing and
+Kubernetes (Minikube) for container orchestration.
+
+------------------------------------------------------------------------
+
+## 🐳 Run with Docker
+
+### 1. Build Docker Image
+
+``` bash
+docker build -f docker/Dockerfile -t spaghetti-mlops .
+```
+
+### 2. Run the Container
+
+``` bash
+docker run -p 8000:8000 spaghetti-mlops
+```
+
+### 3. Access the API
+
+Open your browser:
+
+    http://localhost:8000/docs
+
+Upload your image via the FastAPI Swagger UI.
+
+------------------------------------------------------------------------
+
+### 🔁 Development Mode (Live Code Update)
+
+Mount the API source for live updates:
+
+``` bash
+docker run -p 8000:8000 \
+-v $(pwd)/src/api:/app/src/api \
+spaghetti-mlops
+```
+
+------------------------------------------------------------------------
+
+## ☸️ Run with Kubernetes (Minikube)
+
+### 1. Start Minikube
+
+``` bash
+minikube start
+```
+
+### 2. Use Minikube Docker Environment
+
+``` bash
+eval $(minikube docker-env)
+```
+
+### 3. Build Image Inside Minikube
+
+``` bash
+docker build -f docker/Dockerfile -t spaghetti-mlops .
+```
+
+### 4. Deploy to Kubernetes
+
+``` bash
+kubectl apply -f k8s/
+```
+
+### 5. Check Running Pods
+
+``` bash
+kubectl get pods
+```
+
+### 6. Expose the Service
+
+``` bash
+minikube service spaghetti-service
+```
+
+This will automatically open the service in your browser.
+
+------------------------------------------------------------------------
 
 ---
 
