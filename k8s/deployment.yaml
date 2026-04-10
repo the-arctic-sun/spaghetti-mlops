@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spaghetti-mlops
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spaghetti-mlops
+  template:
+    metadata:
+      labels:
+        app: spaghetti-mlops
+    spec:
+      containers:
+      - name: spaghetti-mlops
+        image: spaghetti-mlops:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
