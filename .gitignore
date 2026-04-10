@@ -6,6 +6,9 @@ models/best.trt
 **/*.onnx
 **/*.trt
 
+# backup files
+**/*.backup
+
 
 # Windows metadata
 **/*:Zone.Identifier
